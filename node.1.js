@@ -9,14 +9,13 @@ console.log(`Your User ID: ${userId}, and your email: ${email}`);
 let fs = require('fs');
 let filename = 'userinfo.json';
 
-let users = [];
-
-let data = {
+let obj = {
     UserId: `${userId}`, 
     email: `${email}`
 };
 
-users.push(data); //push data
+let users = []; 
+users.push(obj); //push object into array
  
 let json = JSON.stringify(users, null, 2); //making the json readable
 
