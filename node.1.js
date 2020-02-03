@@ -9,16 +9,14 @@ console.log(`Your User ID: ${userId}, and your email: ${email}`);
 let fs = require('fs');
 let filename = 'userinfo.json';
 
-let users = {
-    user: [] //gem data i array
-};
+let users = [];
 
 let data = {
     UserId: `${userId}`, 
     email: `${email}`
 };
 
-users.user.push(data); //push data
+users.push(data); //push data
  
 let json = JSON.stringify(users, null, 2); //making the json readable
 
