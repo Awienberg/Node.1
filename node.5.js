@@ -13,13 +13,4 @@ let obj = {
     'email': email
 };
 
-let arr = []; 
-arr.push(obj); //push object into array
-let json = JSON.stringify(arr, null, 2); //making the json readable
-
-fs.writeFile(filename, json, (err) => {
-    if(err) {
-        throw err;
-    }
-    console.log('Data added to the json file userinfo');
-});
+let arr;
